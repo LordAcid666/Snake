@@ -19,5 +19,12 @@
             RowOffset = rowOffset;
             ColOffset = colOffset;
         }
+
+        public Direction Opposite()
+        {
+            return new Direction(-RowOffset, -ColOffset);
+        }
+
+
     }
 }
