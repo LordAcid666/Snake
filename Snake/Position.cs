@@ -11,5 +11,11 @@ namespace Snake
             Row = row;
             Col = col;
         }
+
+        // ritorna la pozisione muovendosi di una posizione
+        public Position Translate(Direction dir)
+        {
+            return new Position(Row + dir.RowOffset, Col + dir.ColOffset);
+        }
     }
 }
