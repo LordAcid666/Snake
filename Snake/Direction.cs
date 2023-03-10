@@ -25,7 +25,6 @@
             return new Direction(-RowOffset, -ColOffset);
         }
 
-        
-        
-    }//END_Direction
+
+    }
 }
