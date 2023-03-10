@@ -24,6 +24,8 @@ namespace Snake
             Col = col;
             Grid = new GridValue[rows, col];
             Dir = Direction.Right;
+
+            AddSnake();
         }
 
         // fa apparire il serpente
