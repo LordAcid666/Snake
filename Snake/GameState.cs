@@ -25,5 +25,17 @@ namespace Snake
             Grid = new GridValue[rows, col];
             Dir = Direction.Right;
         }
+
+        // fa apparire il serpente
+        private void AddSnake()
+        {
+            int r = Rows / 2;
+
+            for(int c =  0; c <= 3; c++)
+            {
+                Grid[r,c] = GridValue.Snake;
+                snakePositions.AddFirst(new Position(r,c));
+            }
+        }
     }
 }
